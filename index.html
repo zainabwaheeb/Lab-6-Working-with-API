@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+
+  <body>
+     <div class="page-shell">
+
+    <header class="site-header">
+      <a href="#" class="brand">
+        <span class="brand-mark">✦</span>
+        <span>POKÉDEX <span class="brand-light">DISCOVERY</span></span>
+      </a>
+
+      <div class="header-note">
+        <span class="live-dot"></span>
+        LIVE POKÉMON DATABASE
+      </div>
+    </header>
+
+    <main>
+
+      <section class="intro-section">
+        <div class="eyebrow">YOUR NEXT DISCOVERY STARTS HERE</div>
+
+        <h1>
+          Meet your next<br>
+          <span>favourite Pokémon.</span>
+        </h1>
+
+        <p class="intro-copy">
+          Search the Pokédex or let curiosity take the lead.
+          Discover Pokémon, explore their types and learn about their stats.
+        </p>
+
+        <form class="search-form" id="search-form">
+          <span class="search-icon">⌕</span>
+
+          <input
+            type="search"
+            id="pokemon-search"
+            placeholder="Search by name or Pokédex number..."
+            autocomplete="off"
+          >
+
+          <button type="submit" class="search-button">
+            Search ↗
+          </button>
+        </form>
+
+        <div class="search-hint">
+          TRY:
+          <button type="button" class="text-button" data-pokemon="pikachu">Pikachu</button>
+          <span>·</span>
+          <button type="button" class="text-button" data-pokemon="charizard">Charizard</button>
+          <span>·</span>
+          <button type="button" class="text-button" data-pokemon="eevee">Eevee</button>
+        </div>
+      </section>
+
+      <section class="discovery-section">
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">THE FIELD GUIDE</div>
+            <h2>Your discovery</h2>
+          </div>
+
+          <button class="random-button" id="random-button" type="button">
+            ✦ Surprise me
+          </button>
+        </div>
+
+        <div
+          class="status-message"
+          id="status-message"
+          role="status"
+          aria-live="polite"
+        ></div>
+
+        
+
+
+
+
+
+
+</head>
+ <script src="js/script.js"></script>   
+</body>
+</html>
