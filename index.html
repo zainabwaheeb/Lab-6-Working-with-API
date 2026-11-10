@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesheet.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-     <div class="page-shell">
+  <title>Pokémon Discovery</title>
+
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+  <div class="page-shell">
 
     <header class="site-header">
       <a href="#" class="brand">
         <span class="brand-mark">✦</span>
-        <span>POKÉDEX <span class="brand-light">DISCOVERY</span></span>
+        <span>POKÉMON <span class="brand-light">DISCOVERY</span></span>
       </a>
 
       <div class="header-note">
@@ -69,9 +72,7 @@
             <h2>Your discovery</h2>
           </div>
 
-          <button class="random-button" id="random-button" type="button">
-            ✦ Surprise me
-          </button>
+          <button class="random-button" id="random-button" type="button"> ✦ Surprise me ✦ </button>
         </div>
 
         <div
@@ -81,14 +82,47 @@
           aria-live="polite"
         ></div>
 
-        
+        <article class="pokemon-card" id="pokemon-card">
 
+          <div class="card-image-side">
+            <img id="pokemon-image" src="" alt="">
+          </div>
 
+          <div class="card-info-side">
+            <div class="pokemon-number" id="pokemon-number"></div>
+            <h3 id="pokemon-name"></h3>
+            <div class="type-list" id="pokemon-types"></div>
 
+            <div class="quick-facts">
+              <div>
+                <span class="fact-label">Height</span>
+                <span id="pokemon-height"></span>
+              </div>
+              <div>
+                <span class="fact-label">Weight</span>
+                <span id="pokemon-weight"></span>
+              </div>
+              <div>
+                <span class="fact-label">Abilities</span>
+                <span id="pokemon-abilities"></span>
+              </div>
+            </div>
 
+            <h4>Base stats</h4>
+            <div class="stats-list" id="stats-list"></div>
 
+            <p class="attack-note" id="attack-note"></p>
+          </div>
 
-</head>
- <script src="js/script.js"></script>   
+        </article>
+
+      </section>
+
+    </main>
+
+   
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
